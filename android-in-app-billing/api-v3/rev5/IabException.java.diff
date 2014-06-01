@@ -1,0 +1,13 @@
+--- G:/Android/sdk/extras/google/play_billing/samples/TrivialDrive/src/com/example/android/trivialdrivesample/util/IabException.java	Fri Nov 29 18:55:07 2013
++++ G:/Android/projects/MustachifyEverything/src/twig/nguyen/common/services/billing/IabException.java	Fri Dec 20 12:08:44 2013
+@@ -22,7 +22,9 @@
+  * call {@link #getResult()}.
+  */
+ public class IabException extends Exception {
+-    IabResult mResult;
++	private static final long serialVersionUID = -7238205509940581401L;
++
++	IabResult mResult;
+ 
+     public IabException(IabResult r) {
+         this(r, null);
